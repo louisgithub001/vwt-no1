@@ -15,6 +15,7 @@ proxies:
   - {name: 🇸🇬 SVIP-新加坡002, server: add.star1688.top, port: 20026, type: vmess, uuid: afcb42ae-ae85-4386-8904-046f9a279d50, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: add.star1688.top}}, tfo: false}
   - {name: 🇬🇧 SVIP-英国001, server: add.star1688.top, port: 20027, type: vmess, uuid: b4f46c3d-f6b4-4cab-8762-c77133373f41, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: add.star1688.top}}, tfo: false}
   - {name: 🇬🇧 SVIP-英国002, server: add.star1688.top, port: 20028, type: vmess, uuid: 0edcc6c4-60d8-4b6f-c554-ff67138ef041, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: add.star1688.top}}, tfo: false}
+  - {name: 🇬🇧 测试, server: add.star1688.top, port: 20031, type: vmess, uuid: a15ea562-fdb1-47a5-9383-052fa2ff93a9, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: add.star1688.top}}, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,6 +32,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -47,6 +49,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -63,6 +66,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: 📲 电报信息
     type: select
     proxies:
@@ -78,6 +82,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -93,6 +98,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -108,6 +114,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -124,6 +131,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,6 +164,7 @@ proxy-groups:
       - 🇸🇬 SVIP-新加坡002
       - 🇬🇧 SVIP-英国001
       - 🇬🇧 SVIP-英国002
+      - 🇬🇧 测试
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
