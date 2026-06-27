@@ -3,28 +3,34 @@ socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
 allow-lan: false
-unified-delay: true
 mode: rule
 log-level: info
-ipv6: false
 external-controller: 0.0.0.0:9090
+unified-delay: true
+sniffer:
+  sniff:
+    TLS: {ports: [443], override-destination: true}
+    HTTP: {ports: [443], override-destination: true}
+  enable: true
+  parse-pure-ip: false
+  force-dns-mapping: true
+  override-destination: true
+ipv6: false
 clash-for-android:
   append-system-dns: false
-profile:
-  tracing: true
 experimental:
   sniff-tls-sni: true
 proxies:
-  - {name: 🇩🇪 DG-德国001, server: dg.ilt128.top, port: 20001, type: vmess, uuid: 7788262c-f13a-4b1c-d8b2-bd55ddce471b, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国002, server: dg.ilt128.top, port: 20002, type: vmess, uuid: c89c5c35-44a6-4f33-aaa7-62808bf1e143, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国003, server: dg.ilt128.top, port: 20003, type: vmess, uuid: 7411c2a7-c2ef-43ca-a3f8-8db066d0fa07, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国004, server: dg.ilt128.top, port: 20004, type: vmess, uuid: 3e7e3d6d-4a32-44a7-a303-58e955a07cd2, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国005, server: dg.ilt128.top, port: 20005, type: vmess, uuid: 68247230-3fee-4cd4-b133-c8c2bac0cd6c, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国006, server: dg.ilt128.top, port: 20006, type: vmess, uuid: d90621fb-082d-4c26-bb49-f8dd060d633a, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国007, server: dg.ilt128.top, port: 20007, type: vmess, uuid: e92f40b2-6006-42f4-8936-f1f3fb13ee28, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国008, server: dg.ilt128.top, port: 20008, type: vmess, uuid: 24f9e85f-852f-4a20-b2ce-58240bee584d, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国009, server: dg.ilt128.top, port: 20009, type: vmess, uuid: 31f8b5c6-3b88-4dd9-b0d6-1c17b5510467, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
-  - {name: 🇩🇪 DG-德国010, server: dg.ilt128.top, port: 20010, type: vmess, uuid: 3ffa93cc-5598-4239-9eef-f001b3bc2dc6, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dg.ilt128.top}}}
+  - {name: 🇺🇸 MG-美国0010, server: mgde.ast256.top, port: 20010, type: vmess, uuid: 7320369e-8642-4afd-a221-0e70528fcc44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0009, server: mgde.ast256.top, port: 20009, type: vmess, uuid: 18aa403a-4103-485e-9d8b-df180809cb0d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0008, server: mgde.ast256.top, port: 20008, type: vmess, uuid: 2c90f691-462a-47b1-e5c7-0999a6ed41f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0007, server: mgde.ast256.top, port: 20007, type: vmess, uuid: a49c56e4-de43-4041-c035-0abd3279a1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0006, server: mgde.ast256.top, port: 20006, type: vmess, uuid: 27307cb4-57c0-4785-8c61-3c57e1006924, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0005, server: mgde.ast256.top, port: 20005, type: vmess, uuid: 5683a142-ac08-4469-fe44-68b6a36924a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0004, server: mgde.ast256.top, port: 20004, type: vmess, uuid: 06eb60e2-1e11-4f29-924e-05b9eb9c89b4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0003, server: mgde.ast256.top, port: 20003, type: vmess, uuid: 49a2ee28-f517-47fc-f1f0-3cd470e9d56d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0002, server: mgde.ast256.top, port: 20002, type: vmess, uuid: 78fdb822-9d23-4d60-9957-74ae542fb313, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0001, server: mgde.ast256.top, port: 20001, type: vmess, uuid: 7cd1e218-32e5-4981-a78a-02700d98cb15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
 proxy-groups:
   - name: Proxies
     type: select
@@ -34,16 +40,16 @@ proxy-groups:
       - SG
       - TW
       - US
-      - 🇩🇪 DG-德国001
-      - 🇩🇪 DG-德国002
-      - 🇩🇪 DG-德国003
-      - 🇩🇪 DG-德国004
-      - 🇩🇪 DG-德国005
-      - 🇩🇪 DG-德国006
-      - 🇩🇪 DG-德国007
-      - 🇩🇪 DG-德国008
-      - 🇩🇪 DG-德国009
-      - 🇩🇪 DG-德国010
+      - 🇺🇸 MG-美国0010
+      - 🇺🇸 MG-美国0009
+      - 🇺🇸 MG-美国0008
+      - 🇺🇸 MG-美国0007
+      - 🇺🇸 MG-美国0006
+      - 🇺🇸 MG-美国0005
+      - 🇺🇸 MG-美国0004
+      - 🇺🇸 MG-美国0003
+      - 🇺🇸 MG-美国0002
+      - 🇺🇸 MG-美国0001
   - name: YouTube
     type: select
     proxies:
@@ -193,7 +199,16 @@ proxy-groups:
   - name: US
     type: select
     proxies:
-      - DIRECT
+      - 🇺🇸 MG-美国0010
+      - 🇺🇸 MG-美国0009
+      - 🇺🇸 MG-美国0008
+      - 🇺🇸 MG-美国0007
+      - 🇺🇸 MG-美国0006
+      - 🇺🇸 MG-美国0005
+      - 🇺🇸 MG-美国0004
+      - 🇺🇸 MG-美国0003
+      - 🇺🇸 MG-美国0002
+      - 🇺🇸 MG-美国0001
 rules:
  - DOMAIN,app.adjust.com,DIRECT
  - DOMAIN,app.appsflyer.com,DIRECT
@@ -4173,6 +4188,7 @@ rules:
  - DOMAIN-SUFFIX,tumblr.com,Proxies
  - DOMAIN-SUFFIX,videopress.com,Proxies
  - DOMAIN-SUFFIX,wordpress.com,Proxies
+ - DOMAIN-SUFFIX,push.apple.com,Proxies
  - DOMAIN-SUFFIX,bloomberg.com,Proxies
  - DOMAIN-SUFFIX,bloomberg.de,Proxies
  - DOMAIN-SUFFIX,bloombergview.com,Proxies
@@ -4212,7 +4228,10 @@ rules:
  - DOMAIN-SUFFIX,sushi.com,Proxies
  - DOMAIN-SUFFIX,uniswap.org,Proxies
  - DOMAIN-SUFFIX,zb.com,Proxies
+ - DOMAIN-SUFFIX,discord.co,Proxies
  - DOMAIN-SUFFIX,discord.com,Proxies
+ - DOMAIN-SUFFIX,discord.gg,Proxies
+ - DOMAIN-SUFFIX,discord.media,Proxies
  - DOMAIN-SUFFIX,discordapp.com,Proxies
  - DOMAIN-SUFFIX,discordapp.net,Proxies
  - DOMAIN-SUFFIX,dropbox.com,Proxies
