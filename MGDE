@@ -21,16 +21,16 @@ clash-for-android:
 experimental:
   sniff-tls-sni: true
 proxies:
-  - {name: 🇺🇸 MG-美国0010, server: mgde.ast256.top, port: 20010, type: vmess, uuid: 7320369e-8642-4afd-a221-0e70528fcc44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0009, server: mgde.ast256.top, port: 20009, type: vmess, uuid: 18aa403a-4103-485e-9d8b-df180809cb0d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0008, server: mgde.ast256.top, port: 20008, type: vmess, uuid: 2c90f691-462a-47b1-e5c7-0999a6ed41f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0007, server: mgde.ast256.top, port: 20007, type: vmess, uuid: a49c56e4-de43-4041-c035-0abd3279a1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0006, server: mgde.ast256.top, port: 20006, type: vmess, uuid: 27307cb4-57c0-4785-8c61-3c57e1006924, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0005, server: mgde.ast256.top, port: 20005, type: vmess, uuid: 5683a142-ac08-4469-fe44-68b6a36924a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0004, server: mgde.ast256.top, port: 20004, type: vmess, uuid: 06eb60e2-1e11-4f29-924e-05b9eb9c89b4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0003, server: mgde.ast256.top, port: 20003, type: vmess, uuid: 49a2ee28-f517-47fc-f1f0-3cd470e9d56d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0002, server: mgde.ast256.top, port: 20002, type: vmess, uuid: 78fdb822-9d23-4d60-9957-74ae542fb313, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
-  - {name: 🇺🇸 MG-美国0001, server: mgde.ast256.top, port: 20001, type: vmess, uuid: 7cd1e218-32e5-4981-a78a-02700d98cb15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0010, server: mgde.ast256.top, port: 20020, type: vmess, uuid: 7320369e-8642-4afd-a221-0e70528fcc44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0009, server: mgde.ast256.top, port: 20019, type: vmess, uuid: 18aa403a-4103-485e-9d8b-df180809cb0d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0008, server: mgde.ast256.top, port: 20018, type: vmess, uuid: 2c90f691-462a-47b1-e5c7-0999a6ed41f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0007, server: mgde.ast256.top, port: 20017, type: vmess, uuid: a49c56e4-de43-4041-c035-0abd3279a1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0006, server: mgde.ast256.top, port: 20016, type: vmess, uuid: 27307cb4-57c0-4785-8c61-3c57e1006924, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0005, server: mgde.ast256.top, port: 20015, type: vmess, uuid: 5683a142-ac08-4469-fe44-68b6a36924a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0004, server: mgde.ast256.top, port: 20014, type: vmess, uuid: 06eb60e2-1e11-4f29-924e-05b9eb9c89b4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0003, server: mgde.ast256.top, port: 20013, type: vmess, uuid: 49a2ee28-f517-47fc-f1f0-3cd470e9d56d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0002, server: mgde.ast256.top, port: 20012, type: vmess, uuid: 78fdb822-9d23-4d60-9957-74ae542fb313, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
+  - {name: 🇺🇸 MG-美国0001, server: mgde.ast256.top, port: 20011, type: vmess, uuid: 7cd1e218-32e5-4981-a78a-02700d98cb15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mgde.ast256.top}}}
 proxy-groups:
   - name: Proxies
     type: select
