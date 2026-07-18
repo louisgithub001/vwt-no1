@@ -5,7 +5,7 @@ mixed-port: 7893
 allow-lan: false
 mode: rule
 log-level: info
-external-controller: 0.0.0.0:9090
+external-controller: 127.0.0.1:9090
 unified-delay: true
 sniffer:
   sniff:
@@ -18,19 +18,118 @@ sniffer:
 ipv6: false
 clash-for-android:
   append-system-dns: false
+profile:
+  tracing: true
 experimental:
   sniff-tls-sni: true
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:7874
+  use-hosts: true
+  use-system-hosts: false
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - tls://119.29.29.29
+    - tls://223.5.5.5
+    - https://dns.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - udp://127.0.0.1:7874
+  fake-ip-range: 198.18.0.0/15
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - stun.*.*
+    - stun.*.*.*
+    - swscan.apple.com
+    - mesu.apple.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - localhost.ptlogin2.qq.com
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.*.xboxlive.com"
+    - "*.ipv6.microsoft.com"
+    - teredo.*.*.*
+    - teredo.*.*
+    - speedtest.cros.wr.pvp.net
+    - +.jjvip8.com
+    - www.douyu.com
+    - activityapi.huya.com
+    - activityapi.huya.com.w.cdngslb.com
+    - www.bilibili.com
+    - api.bilibili.com
+    - a.w.bilicdn1.com
+    - +.ilt128.top
+  enhanced-mode: fake-ip
 proxies:
-  - {name: 🇺🇸 美国Lsg-0010, server: mglsg.uny118.top, port: 20020, type: vmess, uuid: df954a91-5624-4de5-edb8-c7294c9eafbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0009, server: mglsg.uny118.top, port: 20019, type: vmess, uuid: 08e573f3-ef82-4eae-eec9-a07b7a8a425f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0008, server: mglsg.uny118.top, port: 20018, type: vmess, uuid: c65e0395-a64a-4ed7-9de9-fe4b5aac33ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0007, server: mglsg.uny118.top, port: 20017, type: vmess, uuid: d25d488d-ba68-4ccb-a0d3-ffb6d3db20fe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0006, server: mglsg.uny118.top, port: 20016, type: vmess, uuid: 5c187d6b-a430-470d-ffbe-ebc767ee1a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0005, server: mglsg.uny118.top, port: 20015, type: vmess, uuid: 34a52732-7b8f-4bcd-b2f1-f3b33a58d181, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0004, server: mglsg.uny118.top, port: 20014, type: vmess, uuid: 5d4da322-6859-4d17-ead2-45a60c5104ac, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0003, server: mglsg.uny118.top, port: 20013, type: vmess, uuid: ba9c4c07-9cf3-405f-e24c-85fb581a9fd7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0002, server: mglsg.uny118.top, port: 20012, type: vmess, uuid: 777961be-5520-417f-cb99-c016f747499f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
-  - {name: 🇺🇸 美国Lsg-0001, server: mglsg.uny118.top, port: 20011, type: vmess, uuid: 63edf308-3609-41b8-970b-eeb5d0f16302, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mglsg.uny118.top}}}
+  - {name: 🇺🇸 美国SVIP-0010, server: kite.ilt128.top, port: 20010, type: vmess, uuid: 6e5fbab1-694f-4c54-e779-a7890a7d2846, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0009, server: kite.ilt128.top, port: 20009, type: vmess, uuid: 2ef77e8f-ae17-4d8c-e631-2f0afdd451cd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0008, server: kite.ilt128.top, port: 20008, type: vmess, uuid: 76075a69-12f7-46bd-e273-073dbe3e723c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0007, server: kite.ilt128.top, port: 20007, type: vmess, uuid: c70cc164-a0ab-4ef9-b214-4434e49ecc37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0006, server: kite.ilt128.top, port: 20006, type: vmess, uuid: e02c6df5-7532-42ed-c575-d25e213910f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0005, server: kite.ilt128.top, port: 20005, type: vmess, uuid: 1745ed2a-e691-4c37-e3e1-c1cd4dd2edfb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0004, server: kite.ilt128.top, port: 20004, type: vmess, uuid: 589d182f-52c1-42a5-b29d-45a666d28339, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0003, server: kite.ilt128.top, port: 20003, type: vmess, uuid: 881c5019-2082-457b-9e98-10278431427b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0002, server: kite.ilt128.top, port: 20002, type: vmess, uuid: ea6b9818-0dfd-43bb-ce1d-0c89712e7d8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
+  - {name: 🇺🇸 美国SVIP-0001, server: kite.ilt128.top, port: 20001, type: vmess, uuid: 05a2666a-b11e-4135-d6b7-fb15cfe94201, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kite.ilt128.top}}}
 proxy-groups:
   - name: Proxies
     type: select
@@ -40,16 +139,16 @@ proxy-groups:
       - SG
       - TW
       - US
-      - 🇺🇸 美国Lsg-0010
-      - 🇺🇸 美国Lsg-0009
-      - 🇺🇸 美国Lsg-0008
-      - 🇺🇸 美国Lsg-0007
-      - 🇺🇸 美国Lsg-0006
-      - 🇺🇸 美国Lsg-0005
-      - 🇺🇸 美国Lsg-0004
-      - 🇺🇸 美国Lsg-0003
-      - 🇺🇸 美国Lsg-0002
-      - 🇺🇸 美国Lsg-0001
+      - 🇺🇸 美国SVIP-0010
+      - 🇺🇸 美国SVIP-0009
+      - 🇺🇸 美国SVIP-0008
+      - 🇺🇸 美国SVIP-0007
+      - 🇺🇸 美国SVIP-0006
+      - 🇺🇸 美国SVIP-0005
+      - 🇺🇸 美国SVIP-0004
+      - 🇺🇸 美国SVIP-0003
+      - 🇺🇸 美国SVIP-0002
+      - 🇺🇸 美国SVIP-0001
   - name: YouTube
     type: select
     proxies:
@@ -199,16 +298,16 @@ proxy-groups:
   - name: US
     type: select
     proxies:
-      - 🇺🇸 美国Lsg-0010
-      - 🇺🇸 美国Lsg-0009
-      - 🇺🇸 美国Lsg-0008
-      - 🇺🇸 美国Lsg-0007
-      - 🇺🇸 美国Lsg-0006
-      - 🇺🇸 美国Lsg-0005
-      - 🇺🇸 美国Lsg-0004
-      - 🇺🇸 美国Lsg-0003
-      - 🇺🇸 美国Lsg-0002
-      - 🇺🇸 美国Lsg-0001
+      - 🇺🇸 美国SVIP-0010
+      - 🇺🇸 美国SVIP-0009
+      - 🇺🇸 美国SVIP-0008
+      - 🇺🇸 美国SVIP-0007
+      - 🇺🇸 美国SVIP-0006
+      - 🇺🇸 美国SVIP-0005
+      - 🇺🇸 美国SVIP-0004
+      - 🇺🇸 美国SVIP-0003
+      - 🇺🇸 美国SVIP-0002
+      - 🇺🇸 美国SVIP-0001
 rules:
  - DOMAIN,app.adjust.com,DIRECT
  - DOMAIN,app.appsflyer.com,DIRECT
@@ -3385,6 +3484,42 @@ rules:
  - DOMAIN-KEYWORD,skydrive,Microsoft
  - PROCESS-NAME,OneDrive,Microsoft
  - PROCESS-NAME,OneDriveUpdater,Microsoft
+ - DOMAIN,anthropic.auth0.com,OpenAI
+ - DOMAIN,anthropic-com.ghost.io,OpenAI
+ - DOMAIN,anthropic.com.cdn.cloudflare.net,OpenAI
+ - DOMAIN,browser-intake-us5-datadoghq.com,OpenAI
+ - DOMAIN,cdn.usefathom.com,OpenAI
+ - DOMAIN,servd-anthropic-website.b-cdn.net,OpenAI
+ - DOMAIN-SUFFIX,anthropic.com,OpenAI
+ - DOMAIN-SUFFIX,claude.ai,OpenAI
+ - DOMAIN-SUFFIX,claude.com,OpenAI
+ - DOMAIN-SUFFIX,clau.de,OpenAI
+ - DOMAIN-SUFFIX,claudemcpclient.com,OpenAI
+ - DOMAIN-SUFFIX,claudeusercontent.com,OpenAI
+ - DOMAIN-SUFFIX,intercom.io,OpenAI
+ - DOMAIN-SUFFIX,intercomcdn.com,OpenAI
+ - DOMAIN-SUFFIX,sentry.io,OpenAI
+ - DOMAIN-SUFFIX,statsigapi.net,OpenAI
+ - DOMAIN-KEYWORD,datadog,OpenAI
+ - DOMAIN-KEYWORD,sift,OpenAI
+ - DOMAIN,autopush-cloudcode-pa.sandbox.googleapis.com,OpenAI
+ - DOMAIN,cloudcode-pa.googleapis.com,OpenAI
+ - DOMAIN,cloudaicompanion.googleapis.com,OpenAI
+ - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com,OpenAI
+ - DOMAIN,generativelanguage.googleapis.com,OpenAI
+ - DOMAIN-KEYWORD,aiplatform.googleapis.com,OpenAI
+ - DOMAIN-SUFFIX,githubcopilot.com,OpenAI
+ - DOMAIN-SUFFIX,cursor.sh,OpenAI
+ - DOMAIN-SUFFIX,cursorapi.com,OpenAI
+ - DOMAIN-SUFFIX,jetbrains.ai,OpenAI
+ - DOMAIN-SUFFIX,ai.azure.com,OpenAI
+ - DOMAIN-SUFFIX,cognitiveservices.azure.com,OpenAI
+ - DOMAIN-SUFFIX,cognitive.microsoft.com,OpenAI
+ - DOMAIN-SUFFIX,oai.azure.com,OpenAI
+ - DOMAIN-SUFFIX,openai.azure.com,OpenAI
+ - DOMAIN-SUFFIX,openrouter.ai,OpenAI
+ - DOMAIN-SUFFIX,perplexity.ai,OpenAI
+ - DOMAIN-SUFFIX,x.ai,OpenAI
  - DOMAIN,labs.google,OpenAI
  - DOMAIN,browser-intake-datadoghq.com,OpenAI
  - DOMAIN,chat.openai.com.cdn.cloudflare.net,OpenAI
@@ -3417,10 +3552,11 @@ rules:
  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,OpenAI
  - DOMAIN-SUFFIX,openaicom.imgix.net,OpenAI
  - DOMAIN-SUFFIX,segment.io,OpenAI
- - DOMAIN-SUFFIX,sentry.io,OpenAI
  - DOMAIN-SUFFIX,stripe.com,OpenAI
  - DOMAIN-SUFFIX,turn.livekit.cloud,OpenAI
  - DOMAIN-KEYWORD,openai,OpenAI
+ - IP-CIDR,160.79.104.0/21,OpenAI,no-resolve
+ - IP-CIDR6,2607:6BC0::/32,OpenAI,no-resolve
  - IP-CIDR,24.199.123.28/32,OpenAI,no-resolve
  - IP-CIDR,64.23.132.171/32,OpenAI,no-resolve
  - DOMAIN-SUFFIX,apple-ready.fastly-edge.com,OpenAI
@@ -4429,6 +4565,7 @@ rules:
  - DOMAIN-SUFFIX,springsunday.net,DIRECT
  - DOMAIN-SUFFIX,tjupt.org,DIRECT
  - DOMAIN-SUFFIX,totheglory.im,DIRECT
+ - DOMAIN-SUFFIX,cn,DIRECT
  - GEOIP,CN,DIRECT,no-resolve
  - DOMAIN-SUFFIX,local,DIRECT
  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
